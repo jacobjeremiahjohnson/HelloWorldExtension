@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Hello Extensions",
+    "description": "Add the reading time to Chrome Extension",
+    "version": "1.0",
+    "action": {
+      "default_title": "Click to show an alert"
+    },
+    "permissions": ["activeTab", "scripting", "tabs", "storage"],
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": [
+                "https://mail.google.com/mail/*"
+            ] 
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
