@@ -12,7 +12,8 @@
             "js": ["scripts/content.js"],
             "matches": [
                 "https://mail.google.com/mail/*"
-            ] 
+            ],
+            "css": ["scripts/fix.css"]
         }
     ],
     "background": {

@@ -1,0 +1,37 @@
+body {
+    overflow-x: scroll !important;
+}
+
+#leftbar {
+    overflow-y: scroll;
+    height: 100% !important;
+    overflow-x: hidden !important;
+    width: 10px !important;
+    z-index: 1;
+}
+
+#rightbar {
+}
+
+#middle {
+    margin-left: 1px !important;
+}
+
+#middle div{
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.gb_Bc{
+    z-index: 0;
+}
+
+.eaJ {
+    overflow-y: auto;
+}
+
+#main {
+    /* position: absolute;
+    left: -70px; */
+    overflow-x: scroll !important;
+}
