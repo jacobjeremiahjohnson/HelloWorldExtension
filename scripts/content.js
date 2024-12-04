@@ -19,13 +19,27 @@ chrome.runtime.onMessage.addListener( // Whenever extension icon selected, switc
 )
 
 chrome.storage.local.get(["toggle"]).then((result) => { // If toggle set to true, perform page action
-  console.log(result.toggle)
 
   if (result.toggle) {
     editPage()
   }
 
 })
+
+// let extensionOn = true
+
+// function click(e){
+//   if (extensionOn){
+
+//   } else {
+//   }
+
+//   extensionOn = !extensionOn
+//   //         chrome.tabs.reload()    
+
+// }
+
+// chrome.browserAction.onClicked.addListener(click);
 
 function editPage() { // Edit page 
   const header = document.querySelector("header");
@@ -52,15 +66,12 @@ function editPage() { // Edit page
 
     // const selectBarControls = document.getElementsByClassName("nH aqK")[0]
     // const accountButton = document.getElementsByClassName("gb_y gb_bd gb_Nf gb_Z")[0]
-    // console.log(accountButton)
-    // console.log(selectBar)
 
     // selectBarControls.insertBefore(accountButton, selectBarControls.firstChild)
 
-
-    // Add search bar functionality
-    //const searchBar = document.getElementsByClassName("gb_we")[0]
-    //leftbar.insertBefore(searchBar, leftbar.children[2])
+    //Add search bar functionality
+    const searchBar = document.getElementsByClassName("gb_we")[0]
+    leftbar.insertBefore(searchBar, leftbar.children[2])
     
     const emails = document.querySelector("td")
 
@@ -70,10 +81,10 @@ function editPage() { // Edit page
       emails[i].children[4].style.padding = "0px 0px 0px 0px"
     }
 
-    // header.parentElement.removeChild(header)
+    //header.parentElement.removeChild(header)
     const rightbar = main.children[2]
     rightbar.parentElement.removeChild(rightbar)
-    rightbar.id = "rightbar"
+    // rightbar.id = "rightbar"
     // selectBar.parentElement.removeChild(selectBar)
   }
 }

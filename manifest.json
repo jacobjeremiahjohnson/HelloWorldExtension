@@ -16,6 +16,9 @@
             "css": ["scripts/fix.css"]
         }
     ],
+    "externally_connectable": {
+    "matches": ["https://mail.google.com/mail/*"]
+    },
     "background": {
         "service_worker": "background.js"
     }

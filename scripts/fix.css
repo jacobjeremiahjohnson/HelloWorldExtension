@@ -7,7 +7,6 @@ body {
     height: 100% !important;
     overflow-x: hidden !important;
     width: 10px !important;
-    z-index: 1;
 }
 
 #rightbar {
@@ -31,7 +30,7 @@ body {
 }
 
 #main {
-    /* position: absolute;
-    left: -70px; */
-    overflow-x: scroll !important;
+    /* position: absolute; */
+    /* left: -70px; */
+    /* overflow-x: scroll !important; */
 }
