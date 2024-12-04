@@ -86,5 +86,15 @@ function editPage() { // Edit page
     rightbar.parentElement.removeChild(rightbar)
     // rightbar.id = "rightbar"
     // selectBar.parentElement.removeChild(selectBar)
+
+    const searchSelector = document.querySelector("D E G-atb PY");
+    if (searchSelector) {
+      header.children[1].firstChild.firstChild.parentElement.removeChild(header.children[1].firstChild.firstChild)
+      const scrollSection = document.getElementById(":3")
+
+      scrollSection.insertBefore(searchSelector, scrollSection.firstChild)
+      scrollSection.insertBefore(header, scrollSection.firstChild)
+    }
+
   }
 }

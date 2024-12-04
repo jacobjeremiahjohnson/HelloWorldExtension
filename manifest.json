@@ -1,11 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Hello Extensions",
-    "description": "Add the reading time to Chrome Extension",
+    "name": "Large Font Gmail",
+    "description": "Rearranges, deletes, and edits Gmail's UI to make it more readable at higher zooms.",
     "version": "1.0",
-    "action": {
-      "default_title": "Click to show an alert"
-    },
     "permissions": ["activeTab", "scripting", "tabs", "storage"],
     "content_scripts": [
         {
@@ -21,5 +18,8 @@
     },
     "background": {
         "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "Gmail_Logo_16px.png"
     }
 }

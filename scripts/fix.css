@@ -1,5 +1,6 @@
 body {
     overflow-x: scroll !important;
+    background: 255, 255, 255, 1;
 }
 
 #leftbar {
@@ -7,9 +8,6 @@ body {
     height: 100% !important;
     overflow-x: hidden !important;
     width: 10px !important;
-}
-
-#rightbar {
 }
 
 #middle {
@@ -33,4 +31,27 @@ body {
     /* position: absolute; */
     /* left: -70px; */
     /* overflow-x: scroll !important; */
+}
+
+.gb_kd {
+    background: rgba(255, 255, 255, 1)
+}
+
+.nH {
+    background: rgba(255, 255, 255, 1)
+}
+
+.aSt {
+    width: 96% !important;
+    height: 96% !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.gb_2d:not(.gb_pe) {
+    z-index: 0 !important;
+}
+
+.btC {
+    padding: 0 !important;
 }
